@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color - Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- wrapper -->
+    <div id="wrapper">
+        <h1>
+            Color Calculator
+        </h1>
+
+        <!-- color-display -->
+        <div id="color-display">
+            <p id="copy-text">click to copy</p>
+        </div>
+
+        <!-- color-input -->
+        <input type="text" class="external-color-input">
+
+        <!-- color-calculator -->
+        <div id="color-calculator">
+            <div class="color-adjustments">
+                <div class="color-input-text">
+                    <span class="color-parts">R</span>
+                    <input type="text" disabled class="external-color-input" id="hex" red>
+                </div>
+                <input 
+                    type="range" min="0" max="255" value="255" step="1" class="hex-slider">
+            </div>
+            <div class="color-adjustments">
+                <div class="color-input-text">
+                    <span class="color-parts">G</span>
+                    <input type="text" disabled class="external-color-input" id="hex" green>
+                </div>
+                <input type="range" min="0" max="255" value="255" step="1" class="hex-slider">
+            </div>
+            <div class="color-adjustments">
+                <div class="color-input-text">
+                    <span class="color-parts">B</span>
+                    <input type="text" disabled class="external-color-input" id="hex" blue>
+                </div>
+                <input type="range" min="0" max="255" value="255" step="1" class="hex-slider">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</body>
+</html>
